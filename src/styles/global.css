@@ -198,22 +198,3 @@ hr {
     border-left-color: var(--accent);
   }
 }
-/* Estilos base para la cabecera */
-.site-header {
-  background-color: #ffffff;
-  color: rgb(var(--gray-dark));
-  padding: 1em 2em;
-  border-bottom: 1px solid rgb(var(--gray-light));
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-/* Enlaces en la cabecera */
-.site-header a {
-  color: var(--accent);
-  text-decoration: none;
-  margin-
