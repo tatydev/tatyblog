@@ -159,7 +159,7 @@ hr {
     --accent-dark: #4a72c2;
     --gray-light: 40, 44, 52;
     --gray-dark: 220, 220, 220;
-    --gray-gradient: rgba(34, 37, 42, 0.8), #1a1a1a;
+    --gray-gradient: #0d0d0d, #0d0d0d; /* ¡aquí quitamos el grisáceo! */
     --black: 255, 255, 255;
   }
 
@@ -168,12 +168,7 @@ hr {
     color: rgb(var(--gray-dark));
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  h1, h2, h3, h4, h5, h6 {
     color: rgb(var(--black));
   }
 
