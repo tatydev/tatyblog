@@ -153,3 +153,53 @@ hr {
   /* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
   white-space: nowrap;
 }
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent: #8ab4f8;
+    --accent-dark: #4a72c2;
+    --gray-light: 40, 44, 52;
+    --gray-dark: 220, 220, 220;
+    --gray-gradient: rgba(34, 37, 42, 0.8), #1a1a1a;
+    --black: 255, 255, 255;
+  }
+
+  body {
+    background: linear-gradient(var(--gray-gradient)) no-repeat;
+    color: rgb(var(--gray-dark));
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: rgb(var(--black));
+  }
+
+  code {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #e0e0e0;
+  }
+
+  pre {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+  }
+
+  hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  a {
+    color: var(--accent);
+  }
+
+  a:hover {
+    color: var(--accent-dark);
+  }
+
+  blockquote {
+    border-left-color: var(--accent);
+  }
+}
